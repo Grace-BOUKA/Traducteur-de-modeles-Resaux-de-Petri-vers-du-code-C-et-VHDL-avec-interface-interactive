@@ -27,39 +27,14 @@ L'outil facilite le passage des modèles formels de conception (Réseaux de Petr
 ## 🚀 Prérequis et Clonage
 
 ### 1. Système d'exploitation recommandé
-Le projet a été développé et testé principalement sous **Fedora**, mais il reste compatible avec les autres distributions Linux (comme Ubuntu/Debian) disposant des outils de compilation standard.
+Le projet a été développé et testé sous **Fedora**, il ne reste compatible qu'avec cette distribution de Linux en raison des fichiers pré-compilés.
 
-### 2. Installation de Git LFS (Obligatoire)
-Le dépôt contient des fichiers lourds, des binaires et les dossiers `obj`, `tina` et `models` gérés via **Git LFS**. Vous devez l'installer avant de cloner le dépôt :
-
-- **Sur Fedora :**
-  ```bash
-  sudo dnf install git-lfs
-  git lfs install
-  ```
-
-### 3. Clonage
-```bash
-git pull lfs
-```
-
-### 4. Outils pour la modélisation
+### 2. Outils pour la modélisation
 Installation indispensable pour lancer le logiciel de modélisation TINA :
 ```bash
 sudo dnf install libXScrnSaver
+./tina/bin/nd &
 ```
-
-### 5. Bonus
-En cas d'ajout de fichiers lourds (comme des modèles avec Tina dans `models/`) :
-```bash
-git lfs track "dossier_ou_type/*"
-git add .gitattributes
-git add <vos_fichiers_lourds>
-git commit -m "Ajout de fichiers via Git LFS"
-git lfs push origin main
-git push origin main
-```
-
 ---
 
 ## ⚙️ Compilation
