@@ -1,0 +1,74 @@
+4mnd24m(n)                                                                    4mnd24m(n)
+
+1mNAME0m
+       nd     - Time Petri net net editor and Graphic interface for toolbox
+
+       Part of Tina Toolbox for analysis of Petri nets and Time Petri nets.
+
+
+1mSYNOPSIS0m
+       1mnd 22m[-4mh24melp] [-ag | -at | -ng | -nt] [file]
+
+
+
+1mDESCRIPTION0m
+       nd  (netDraw)  embeds editors for graphic and  textual net descriptions
+       and  automata  descriptions. Also  provides  graphical interfaces   for
+       tools  tina and  struct ("tools" button) when editing  a net.  Produces
+       files in .net  or .ndr format (for nets) readable by tina  and  struct,
+       or  in .aut  or .adr format (for automata),  may import descriptions in
+       .pnml (with or without graphics), .tpn  (tina's  script  language),  or
+       .ktz (for automata).
+
+
+1mOPTIONS0m
+       1m-4m22mh24melp Recalls options.
+
+
+       -ag | -at | -ng | -nt
+
+              Selection   of  initial   editing  mode  if no  file is  loaded.
+              With -ag (resp. -at), edits an automaton  in graphic (resp. tex-
+              tual) form. With -ng (resp.  -nt), edits  a Time Petri   net  in
+              graphic  (resp. textual) form.
+
+              The editing mode of nd is determined by:
+              - its default value (-ng),
+              - superseded by the value saved in the setup file, if any,
+              - superseded by the command line argument, if any,
+              - superseded  by the  mode determined from  the contents
+              of the file loaded, if any.
+
+
+       file
+
+              The file  being loaded, if it  exist (it must  be in one of  the
+              above  formats), or a filename in which the item being edited is
+              saved.
+
+
+       1mDefault options:0m
+
+              nd -ng buffer.ndr
+
+
+
+
+1mEXAMPLES0m
+       nd
+       nd exemple.ndr
+       nd example.aut
+       nd -nt
+
+
+1mSEE ALSO0m
+       nd(n),  tina(n),  plan(n),  struct(n),  ktzio(n),  ndrio(n),   tedd(n),
+       selt(n), sift(n), pathto(n), scan(n), play(n), walk(n), reduce(n), for-
+       mats(n)
+
+
+1mAUTHORS0m
+       Bernard Berthomieu, LAAS/CNRS, 2000-2024, Bernard.Berthomieu@laas.fr.
+
+
+Tina Tools                       Version 3.8.5                           4mnd24m(n)
